@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+<title>REGISTRATION</title>
+<link rel="stylesheet" href="abcd.css">
+</head>
+<body>
+<form>
+<h1>Registration</h1>
+<fieldset>
+<legend>Account Details</legend>
+<table>
+<tr>
+<td style=text-align:right>Email*</td>
+<td><input type="email" name="e-mail" size="30"></td>
+<td style=text-align:right>Repeat email*</td>
+<td><input type="email" name="e-mail" size="30"></td>
+</tr>
+<tr>
+<td style=text-align:right>Password*</td>
+<td><input type="password" name="password" size="30"></td>
+<td style=text-align:right>Repeat Password*</td>
+<td><input type="password" name="password" size="30"></td>
+<td>   *obligatory fields</td>
+</tr> 
+</table>
+</fieldset>
+<fieldset style=height:450px>
+<fieldset id="q2">
+<legend>Personal Details</legend>
+<table>
+<tr>
+<td style=text-align:right>Name* </td>
+<td style=float:left><input type="text" name="name" size="30"/></td>
+</tr>
+<tr>
+<td style=text-align:right>Phone*</td>
+<td style=float:left><input type="text"  name="phone" size="20"/></td>
+</tr>
+<tr>
+<td style=text-align:right><span style=color:lightgrey>Street</span></td>
+<td style=float:left><input type="text" name="street" size=30/></td>
+</tr>
+<tr>
+<td style=text-align:right>City*</td>
+<td style=float:left><input type="text" name="city" size=30></td>
+</tr>
+<tr>
+<td style=text-align:right>Country*</td>
+<td><input list="country">
+	    <datalist id="country">
+		<option value="India">
+		<option value="USA">
+		<option value="england">
+		<option value="France">
+		<option value="Spain">
+		</datalist>
+</td>
+</tr>
+<tr>
+<td style=text-align:right><span style=color:lightgrey>Website </span></td>
+<td style=float:left><input type="text" name="website" placeholder="http://" size="30"></td>
+</tr>
+</table>
+</fieldset>
+<fieldset id="q3">
+<legend>Further Information</legend>
+<table>
+<tr>
+<td>Gender* </td>
+<td style=float:left><input type="radio" name="gender" value="male">Male</td>
+<td style=float:right><input type="radio" name="gender" value="female">Female</td>
+</tr>
+<tr>
+<td>Birthdate*</td>
+<td style=float:left>
+<select name="date">  
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+	</select></td>
+	<td style=float:left><select name="month">
+	<option value="january">January</option>
+	<option value="february">february</option>
+	<option value="march">march</option>
+	<option value="april">april</option>
+	<option value="may">may</option>
+	<option value="june">june</option>
+	<option value="july">July</option>
+	<option value="august">august</option>
+	<option value="september">september</option>
+	<option value="october">October</option>
+	<option value="november">November</option>
+	<option value="december">December</option>
+	</select>
+	</td>
+	<td style=float:left>
+	<input type="text" name="year" size="5">
+	</td>
+	<td>e.g.1976</td>
+</tr>
+<tr>
+<td>Nationality* </td>
+<td><input list="nationality">
+	<datalist id="nationality">
+	<option value="Indian">
+	<option value="Americans">
+	<option value="british">
+	<option value="french">
+	<option value="spanish">
+	</datalist>
+</td>
+</tr>
+<tr>
+<td>Children* </td>
+<td><input type="checkbox" name="children"></td>
+</tr>
+</table>
+<br>
+<table id="td01">
+<tr>
+<th colspan="20" style=text-align:left;background-color:#9AFE2E>HELPFUL INFORMATION</th>
+</tr>
+<tr>
+<td colspan="20">Here comes some explaining text,sed ut perspiciatis under omnis</td>
+</tr>
+<tr>
+<td colspan="20">iste natus error sit voluptatem accusantium doloremque</td>
+</tr>
+<tr>
+<td colspan="20">laudantium,totam rem aperiam.eaque ipsa quae a illo</td>
+</tr>
+<tr>
+<td colspan="20">inventore veriatatis et quasi architecto beatae vitae dicta sunt</td>
+</tr>
+<tr>
+<td colspan="20">explicabo</td>
+</tr>
+</table>
+</fieldset>
+<fieldset id="q4">
+<legend>Terms and Mailing</legend>
+<table>
+<tr>
+<td style=float:left><input type="checkbox" name="con1"></td>
+<td>*I accept the Terms and Conditions</td>
+</tr>
+<tr>
+<td style=float:left><input type="checkbox" name="con1"></td>
+<td> I want to receive personalized offers by your site</td>
+</tr>
+<tr>
+<td style=float:left><input type="checkbox" name="con1"></td>
+<td> Allow partners to send me personalized offers and related services</td>
+</tr>
+</table>
+</fieldset>
+<fieldset id="q5">
+<button type=button name="Register" style=background-color:#40FF00;float:left;width:150px;height:40px>Register >></button>
+</fieldset>
+</fieldset>
+</form>
+</body>
+</html>

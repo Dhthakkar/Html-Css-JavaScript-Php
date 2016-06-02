@@ -1,0 +1,32 @@
+h1{
+color: lightgrey;
+}
+legend{
+color:#9AFE2E;
+}
+#q2{
+	position:relative;
+	height:300px;
+	float:left;
+    width:49%;
+}
+#q3{
+	position:relative;
+	float:right;
+	width:46%;
+	height:300px;
+	
+}
+table#td01 tr{
+	background-color:#D8F6CE;
+}
+#q4{
+	position:relative;
+	float:left;
+	width:70%
+}
+#q5{
+	position:relative;
+	margin-top:10px;
+	float:left;
+}
