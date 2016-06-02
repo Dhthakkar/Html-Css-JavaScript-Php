@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="UTF-8">
+  
+       <title>Calculator</title>
+    
+	<script type="text/javascript">
+    
+	function add() 
+	{
+      		value1 = parseInt(document.calculator.textBox1.value);
+      		value2 = parseInt(document.calculator.textBox2.value);
+      		sum = value1 + value2;
+      
+		document.calculator.textBoxSum.value = sum;
+    	}
+	
+	function sub() 
+	{
+      		value1 = parseInt(document.calculator.textBox1.value);
+      		value2 = parseInt(document.calculator.textBox2.value);
+      		sum = value1 - value2;
+      
+		document.calculator.textBoxSum.value = sum;
+    	}
+	
+	function mul() 
+	{
+      		value1 = parseInt(document.calculator.textBox1.value);
+      		value2 = parseInt(document.calculator.textBox2.value);
+      		sum = value1 * value2;
+      
+		document.calculator.textBoxSum.value = sum;
+    	}
+	
+	function div() 
+	{
+      		value1 = parseInt(document.calculator.textBox1.value);
+      		value2 = parseInt(document.calculator.textBox2.value);
+      		sum = value1 / value2;
+      
+		document.calculator.textBoxSum.value = sum;
+    	}
+
+
+
+  
+	</script>
+</head>
+<body align="center">
+<div >
+    <fieldset>
+        <legend>Calculator</legend>
+<form name="calculator" align="justify">
+    
+	First Number:  &nbsp &nbsp &nbsp &nbsp
+	<input type="text" name="textBox1" align="center" /> 
+    <br><br>
+    Second Number: &nbsp&nbsp&nbsp<input type="text" name="textBox2" align="center" /> 
+    <br/><br>
+    Result: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="textBoxSum" readonly="readonly" align="center"/>
+  	<br><br>
+    
+        <legend>Operations</legend><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <buttongroup >
+	<input class="btn btn-danger" type="button" value="Add" onclick="javascript: add()" />&nbsp
+	<input class="btn btn-warning" type="button" value="Substract" onclick="javascript: sub()" />&nbsp
+	<input class="btn btn-primary" type="button" value="Multiply" onclick="javascript: mul()" />&nbsp
+	<input class="btn btn-info" type="button" value="Divide" onclick="javascript: div()" />
+	<input class="btn" type="reset" value="Reset" />
+    </buttongroup>
+    
+    </fieldset>
+	</form>
+
+</div>
+</body>
+</html>

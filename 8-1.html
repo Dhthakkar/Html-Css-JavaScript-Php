@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<script>
+		function f2()
+		{
+					alert("Welcome!!!");
+					var a=confirm("Do you want to calculate interest?");
+					if(a==true)
+					{
+						var p=prompt("Enter amount...");
+						if(p=="")
+							{
+								alert("Exit");
+							}
+						else
+							{
+							var r=prompt("Enter rate...");
+							if(r=="")
+								{
+									alert("Exit");
+								}
+							else
+								{
+								var n=prompt("Enter year...");
+								if(n=="")
+									{
+										alert("Exit");
+									}
+								else
+									{
+										alert("Interest = " + (p*r*n)/100);
+									}
+								}
+							}
+					}
+					
+		}
+		</script>
+	</head>
+	<body onload="f2()" style="background:lightblue">
+	</body>
+</html>

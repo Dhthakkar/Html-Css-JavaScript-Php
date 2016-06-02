@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble Sort</title>
+</head>
+<body>
+    
+    <h3>Bubble Sort</h3>
+        <script>
+			var a = [5,1,3,2,6];
+document.write("initially elements are "+'<br>');
+for(i=0;i<5;i++)
+    document.write(a[i]+" <br>");
+
+document.write("after sorting : <br>");
+var  temp = 1;
+for(i=0;i<4;i++)
+    {
+    for(j=i+1;j<5;j++)
+        {
+            if(a[j]>a[i])
+                {
+                    temp =a[j];
+                    a[j]=a[i];
+                    a[i]= temp;
+                }
+        }
+    }
+
+for(i=0;i<5;i++)
+    document.write(a[i]+"<br>");
+
+		</script>
+
+
+</body>
+</html>

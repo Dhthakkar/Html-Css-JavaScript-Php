@@ -1,0 +1,63 @@
+table
+{
+	border-collapse: collapse;
+}
+th
+{
+	font-size: 180%;
+	color: #00ff00;
+}
+td
+{
+	height: 30px;
+	padding: 5px;
+	font-size: 130%;
+}
+form
+{
+	border: 2px solid green;
+	padding: 15px;
+}
+input[type=text], input[type=password], input[type=date], select, textarea
+{
+	width: 200px;
+	height: 22px;
+	border: 1px solid blue;
+	border-radius: 5px;
+	outline: none;
+	padding: 3px;
+	font-size: 80%;
+}
+select
+{
+	height: 26px;
+	padding: 0px;
+}
+textarea
+{
+	height: 70px;
+	width: 250px;
+}
+input[type=submit]
+{
+	width: 150px;
+	color: white;
+	background: #000b80;
+	cursor: pointer;
+	height: 35px;
+	border-radius: 7px;
+	font-size: 115%;
+}
+input[type=submit]:hover
+{
+	color: lightblue;
+	background: white;
+}
+
+.odd{
+    background-color: green;
+}
+
+.even{
+    background-color: yellow;
+}

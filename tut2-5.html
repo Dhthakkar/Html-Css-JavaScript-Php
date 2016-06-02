@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Registration For New Semester</title>
+</head>
+<body>
+
+
+		<h2 align-="center"><b>Register For New Semester</b></h2>
+		<form name="reg" action="submit.html" method="post">
+			Name:<br>
+			<input name="name" id="name" size="50" maxlength="50" type="text" placeholder="Enter your name"></br></br>
+            Enrolment no.:</br>
+            <input type="number" id="enroll no."></br></br>
+            Branch:
+            		<select name="Branch" id="Branch">
+				        <option value="0">-Select-</option>
+				        <option value="Electrical">Electrical</option>
+				        <option value="Mechanical">Mechanical</option>
+				        <option value="Computer">Computer</option>
+				        <option value="Textile">Textile</option>
+				        <option value="EC">EC</option>
+				        <option value="IT">IT</option>
+				        <option value="BioMedical">BioMedical</option>
+				        <option value="Envt.">Envt.</option>
+			        </select><br/><br/><br/>	
+            Gender:
+			<input name="gender" id="gender" type="radio">Male</input>
+			<input name="gender" id="gender" type="radio">Female</input></br></br>
+			Your College:<br/>
+			<input name="address" id="address" type="text" size="50" maxlength="50" placeholder="College Name"><br/><br/>
+			
+			Select Your Semester:
+			<select name="sem" id="sem">
+				<option value="0">-Select-</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select><br/><br/><br/>
+			
+			Current Address:<br/>
+			<input name="address" id="address" type="text" size="50" maxlength="50" placeholder="Street Address"></br>
+			<input name="address" id="address" type="text" size="50" maxlength="50" placeholder="Street Address Line 2"></br>
+			<input name="address" id="address" type="text" size="25" maxlength="25" placeholder="City"></br>
+			<input name="address" id="address" type="text" size="25" maxlength="25" placeholder="Region"></br></br>
+			Phone:<br/>
+			<input name="phone" id="phone" type="text" size="10" maxlength="10" placeholder="Mobile No."></br></br>
+			Email Address:<br/>
+			<input name="em" id="em" type="text" size="50" maxlength="50" placeholder="Email Address"></br></br>
+			
+			Birthdate:<br/>
+            <input type="date" name="DOB"></br>
+			Do you want to request transportation services for the student?<br/>
+			<input name="re" id="re" type="radio">Yes</input>
+			<input name="re" id="re" type="radio">No</input><br/><br/><br/>
+			<input name="submit" id="submit" type="submit" value="Submit">
+		</form>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<script>
+			var x = new Array();
+			function f1()
+			{
+				var a=document.getElementById("i1").value;
+				var b=document.getElementById("i2").value;
+				var c=document.getElementById("i3").value;
+				var d=document.getElementById("i4").value;
+				var e=document.getElementById("i5").value;
+				x[0] = parseInt(a);
+				x[1] = parseInt(b);
+				x[2] = parseInt(c);
+				x[3] = parseInt(d);
+				x[4] = parseInt(e);
+				var y = x.length;
+				for(var i=0;i<y;i++)
+				{
+					for(var j=0;j<y-i-1;j++)
+					{
+						if(x[j]<x[j+1])
+						{
+							var temp=x[j];
+							x[j]=x[j+1];
+							x[j+1]=temp;
+						}
+					}
+				}
+				document.writeln("Sorted list : <br>")
+				for(var i=0;i<y;i++)
+				{
+					document.writeln(x[i] + "<br>");
+				}
+			}
+		</script>
+	</head>
+	
+	<body style="background:lightblue">
+		Enter First Number : <input type="text" id="i1"><br>
+		Enter Second Number : <input type="text" id="i2"><br>
+		Enter Third Number : <input type="text" id="i3"><br>
+		Enter Forth Number : <input type="text" id="i4"><br>
+		Enter Fifth Number : <input type="text" id="i5"><br>
+		<input type="button" value="Sort My Elements"onclick="f1()">
+	</body>
+</html>

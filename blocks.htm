@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>rowclospan</title>
+    <style>
+        .cs{border-collapse:collapse;
+        text-align: center;}</style>
+    
+</head>
+<body>
+    <table border=1 class=cs style=" width: 50%; height:150px">
+        <tr >
+        <td class=cs colspan=4>1</td>
+        </tr>
+    
+        <tr>
+        <td class=cs>2</td>
+            <td class=cs rowspan=2 colspan=2>3</td>
+            <td class=cs>4</td>
+        </tr>
+        <tr>
+        <td class=cs>5</td>
+        <td class=cs>6</td>
+        </tr>
+        <tr >
+        <td class=cs colspan=4>7</td>
+        </tr>
+    
+    </table>
+        <br>
+    <table border=1 class=cs style=" width: 50%; height: 150px">
+        <tr >
+        <td class=cs>1</td>
+            <td class=cs colspan=4>2</td>
+        </tr>
+        <tr>
+        <td rowspan=3>3</td>
+        <td>4</td>
+            <td>5</td>
+            <td rowspan=2 colspan=2>6</td>
+        </tr>
+        <tr>
+        <td>7</td>
+            <td>8</td>
+            
+        </tr>
+        <tr>
+            <td colspan=2>9</td>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+    
+    </table>
+
+</body>
+</html>

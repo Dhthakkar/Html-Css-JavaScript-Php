@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	p
+	{
+		font-size: 110%;
+	}
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body style="background:lightblue">
+	<h1>Event Capturing And Event Bubbling</h1>
+	<p>Event capturing and bubbling are two ways of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event. The event propagation mode determines in which order the elements receive the event.</p>
+	<ul>
+		<li><h2>Capturing</h2></li>
+		<div>
+			<ul>
+				<li><p>Let's say that your document contains a &ltdiv&gt which contains a &ltp&gt which contains an &ltimg&gt. Further, let's say you've added an event listener to all of them. When a user clicks on the image, a mouseclick event occurs.</p></li>
+				<li><p>Even though the user clicked the image, the image doesn't get the event first. Instead, the event listener attached to the document grabs the event first and processes it. (That is, it captures the event before it gets to its intended target.)</p></li>
+				<li><p>The event is then passed down to the &ltdiv&gt's event listener. The event then goes to the &ltp&gt, and finally to the &ltimg&gt. That is, all of the clicked-on object's "ancestors" higher up in the document capture the event for processing before sending it down the chain to its intended target.</p></li>
+				<img src="capturing.gif"/>
+			</ul>
+		</div>
+		<li><h2>Bubbling</h2></li>
+		<div>
+			<ul>
+				<li><p>Now let's look at the same situation from the inside out. You have an &ltimg&gt inside a &ltp&gt, which is inside a &ltdiv&gt, which is inside your document.</p></li>
+				<li><p>When a user clicks the image, this time the events rise like a bubble in a glass of water.</p></li>
+				<li><p>The click's original target, the &ltimg&gt, gets to see the event first, and then passes it upwards to the &ltp&gt for further processing, which passes it on to the &ltdiv&gt, which finally passes it up to the document.</p></li>
+				<img src="bubbling.png"/>
+			</ul>
+		</div>
+	</ul>
+</body>
+</html>

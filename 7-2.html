@@ -1,0 +1,90 @@
+<html>
+<head>
+    <script>
+        var x;
+        var sum=0;
+        var sub=0;
+        var mul=0;
+        var div=0;
+    function a(a)
+    {
+     document.abc.first.value=document.abc.first.value + a;
+    }
+        function add()
+        {
+            x=parseInt(document.abc.first.value);
+            document.abc.first.value="";
+            sum=1;
+        }
+        
+        function sub1()
+        {
+            x=parseInt(document.abc.first.value);
+            document.abc.first.value="";
+            sub=1;
+        }
+        
+        function mul1()
+        {
+            x=parseInt(document.abc.first.value);
+            document.abc.first.value="";
+            mul=1;
+        }
+        
+        function div1()
+        {
+            x=parseInt(document.abc.first.value);
+            document.abc.first.value="";
+            div=1;
+        }
+        function add1()
+        {
+                if(sum==1)
+                    {
+                alert(parseInt(document.abc.first.value)+x);
+                }
+            else if(sub==1)
+                {
+                    alert(x-parseInt(document.abc.first.value));
+                }
+            else if(mul==1)
+                {
+                    alert(x*parseInt(document.abc.first.value));
+                }
+            else if(div==1)
+                {
+                    alert(x/parseInt(document.abc.first.value));
+                }
+            
+        
+        }
+        function roo()
+        {
+            alert(Math.sqrt(parseFloat(document.abc.first.value)));
+        }
+    </script>
+    
+    
+    </head>
+<body style="background:lightblue">
+
+<form name=abc>
+        <input type="text" name="first" id="first"> <br> <br> 
+<input type="button" name="0" value="0" id="0" onclick="javascript: a(0)"> <br>
+    <input type="button" name="1" value="1" id="1"onclick="javascript: a(1)" >
+    <input type="button" name="2" value="2" id="2"onclick="javascript: a(2)">
+    <input type="button" name="3" value="3" id="3"onclick="javascript: a(3)"> <br>
+    <input type="button" name="4" value="4" id="4"onclick="javascript: a(4)"> 
+    <input type="button" name="5" value="5" id="5"onclick="javascript: a(5)">
+    <input type="button" name="6" value="6" id="6"onclick="javascript: a(6)"> <br>
+    <input type="button" name="7" value="7" id="7"onclick="javascript: a(7)">
+     <input type="button" name="8" value="8" id="8"onclick="javascript: a(8)">
+    <input type="button" name="9" value="9" id="9"onclick="javascript: a(9)"> <br> <br>
+    <input type="button" value="+" onclick="add()">
+    <input type="button" value="-" onclick="sub1()">
+        <input type="button" value="*" onclick="mul1()">
+        <input type="button" value="root" onclick="roo()">
+	<input type="button" value="/" onclick="div1()">
+	<input type="button" value="=" onclick="add1()">
+    </form>
+    </body>

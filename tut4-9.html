@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+       
+       <title>Password verification</title>
+
+<script type="text/javascript">
+function oncall()
+
+{
+	
+	       pwd=document.getElementById("password");
+	       repwd=document.getElementById("re-password");
+
+	
+	if(pwd.value==repwd.value)
+	   {
+		  alert("Well, U got it");
+		  return true;
+	   }
+	else
+	   {
+		  alert("hehe,try again..or else!");
+		  pwd.focus();
+		  pwd.select();
+		  return false;
+	   }
+}
+
+</script>
+
+</head>
+<body>
+<div class="conatiner" >
+<fieldset>
+    <legend><b>PASSWORD VALIDATION</b></legend>
+        <br>
+    <form name=validation>
+
+        PASSWORD  : <input type="password" value="" style="margin-left:76px" id="password">
+        <br><br>
+	CONFIRM PASSWORD : <input type="password" value="" id="re-password" onblur="oncall();">
+        <br><br>    
+	<input type="submit" value="submit" name="submit" onsubmit="oncall();">
+        
+	</form>
+</fieldset>
+
+
+</div>
+</body>
+</html>

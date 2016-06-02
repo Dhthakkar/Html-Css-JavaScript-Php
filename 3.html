@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<style>
+			h1
+			{
+				text-align:center;
+				padding:5px;
+				font-size:30px;
+				font-family:bold;
+			}
+			input
+			{
+				margin-left:300px;
+				width:320px;
+				font-size:20px;
+			}
+			
+		</style>
+		<script>
+			function f1()
+			{
+				window.open("inline.html");
+			}
+			function f2()
+			{
+				window.open("internal.html");
+			}
+			function f3()
+			{
+				window.open("external.html");
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1>Cascading Style Sheet</h1>
+		<input type="button" value="Inline CSS" onclick="f1()"><br><br>
+		<input type="button" value="Internal(Embedded) CSS" onclick="f2()"><br><br>
+		<input type="button" value="External CSS" onclick="f3()"><br><br>
+	<body>
+</html>

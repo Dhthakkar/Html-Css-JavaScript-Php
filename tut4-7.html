@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Leap year</title>
+</head>
+<body>
+    
+    <h3>Leap Year or Not!!</h3>
+    <script>
+			
+function fun() {
+    s = document.getElementById("tx").value;
+    
+        
+    if (s % 400 == 0)
+        window.alert("it is a leap year");
+    else if ( s % 100 == 0)
+        window.alert("not a leap year");
+    else if (s % 4 == 0)
+        window.alert("it is a leap year");
+    else 
+        window.alert("not a leap year");
+}
+		
+		</script>
+    <p>Enter an year:</p>
+    <input type=number id="tx">
+    <button onclick="fun()" id="sub">Submit</button>
+
+
+</body>
+</html>
