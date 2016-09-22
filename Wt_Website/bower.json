@@ -1,0 +1,28 @@
+{
+  "name": "y",
+  "description": "website for an awesome restaurant",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "conFusion",
+    "Fusion",
+    "Restaurant"
+  ],
+  "authors": [
+    "Meet & Dhruv"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.0",
+    "font-awesome": "^4.5.0"
+  }
+}
